@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Parcial I</title>
+  <link rel="stylesheet" href="css/styles.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="header">
+
+    <a href="index.html">
+      <div class="logo">Frutería</div>
+    </a>
+
+    <div class="nombreAlumno"></div>
+
+    <input type="text" placeholder="Buscar..." class="barra-busqueda" />
+
+    <!-- Carrito con texto y contador separados -->
+    <div class="carrito" id="carrito-header">
+      Carrito: <span id="contador-carrito">0</span> producto(s)
+    </div>
+
+    <!-- Botones de orden -->
+    <button id="ordenar-nombre" type="button">Ordenar por nombre</button>
+    <button id="ordenar-precio" type="button">Ordenar por precio</button>
+  </header>
+
+  <!-- Contenedor principal -->
+  <main>
+    <section class="seccion-productos">
+      <h2>Nuestras frutas</h2>
+      <div class="contenedor-productos"></div>
+    </section>
+
+<!-- Sección carrito -->
+<section class="seccion-carrito">
+  <h2>Carrito</h2>
+
+  <button id="vaciar-carrito" type="button" style="margin-bottom: 10px;">Vaciar carrito</button>
+
+  <ul id="items-carrito">
+  </ul>
+
+  <div class="total-carrito" id="total-carrito" style="text-align: right; margin-top: 1rem; font-weight: bold; display:none;">
+    Total: <span id="precio-total">$0.00</span>
+  </div>
+</section>
+
+  </main>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

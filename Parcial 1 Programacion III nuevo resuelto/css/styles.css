@@ -1,0 +1,162 @@
+/* Estilos globales */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+/* Header */
+header {
+  background-color: #27ae60;
+  color: white;
+  padding: 10px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.nombreAlumno {
+  font-weight: bold;
+}
+
+.barra-busqueda {
+  padding: 6px 10px;
+  border-radius: 4px;
+  border: none;
+  width: 200px;
+  max-width: 100%;
+}
+
+.carrito {
+  font-size: 1rem;
+}
+
+/* Main - contenedor productos y carrito */
+main {
+  display: flex;
+  padding: 20px;
+  gap: 20px;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: white;
+}
+
+/* Sección productos */
+.seccion-productos {
+  flex: 2;
+  min-width: 300px;
+  padding: 10px;
+}
+
+.seccion-productos h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.contenedor-productos {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 15px;
+  justify-content: center;
+}
+
+.card-producto {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 10px;
+  width: 140px;
+  text-align: center;
+  background-color: #fafafa;
+}
+
+.card-producto img {
+  width: 130px;
+  height: 115px;
+  object-fit: contain;
+  border-radius: 5px;
+}
+
+.card-producto h3 {
+  font-size: 1.1rem;
+  margin: 10px 0 5px 0;
+}
+
+.card-producto p {
+  font-size: 1rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.card-producto button {
+  padding: 6px 12px;
+  background-color: #27ae60;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+/* Sección carrito */
+.seccion-carrito {
+  flex: 1;
+  min-width: 250px;
+  background-color: #f8f9fa;
+  padding: 15px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+.seccion-carrito h2 {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+#items-carrito {
+  list-style: none;
+  padding-left: 0;
+  max-height: 300px;
+  overflow-y: auto;
+}
+
+#items-carrito p {
+  text-align: center;
+  color: #666;
+}
+
+.bloque-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 1rem;
+}
+
+.nombre-item {
+  flex: 1;
+}
+
+.boton-eliminar {
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  border-radius: 3px;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-size: 0.85rem;
+}
+
+.total-carrito {
+  font-weight: bold;
+  margin-top: 15px;
+  text-align: right;
+  font-size: 1.1rem;
+}
